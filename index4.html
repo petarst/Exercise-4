@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script type="text/javascript" src="script4.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+
+</head>
+<body onload="defaultMovies()">
+
+<h3>All Movies</h3>
+
+<div id="demo"></div>
+
+<div>
+<span>
+<input type="text "id="addNewMovie" placeholder="This is input box">
+<button type="button", onclick="addMovie ()">Add movie</button>
+</span>
+</div>
+
+
+<div>
+<span>
+<select name="listOfMovies" id="listOfMovies">
+</select>
+<button type="button", onclick="removeMovie()">Remove movie</button>
+</span>
+</div>
+
+<h3>Favorites movies</h3>
+
+
+<div>
+<span>
+<select name="listOfFavoriteFilms" id="listOfFavoriteFilms">
+</select>
+<button type="button", onclick="addFavoritesFilm()">Add favorite film</button>
+<select name="listOfFavoriteFilmsToRemove" id="listOfFavoriteFilmsToRemove">
+</select>
+<button type="button", onclick="removeFavoritesFilm()">Remove favorite film</button>
+</span>
+</div>
+<h4>this is my favorite list</h4>
+<p>You can arrange this list by drag</p>
+<ol type="1" id="favoriteDemo"></ol>
+</body>
+</html>
